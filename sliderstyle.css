@@ -1,0 +1,68 @@
+.slider {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.imagecontainer {
+  width: 4800px;
+  height: 400px;
+  position: relative;
+  transition: left 1s;
+}
+.slidingimages {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+}
+.buttoncontainer {
+  position: relative;
+  top: -20px;
+  justify-items: center;
+}
+.sliderbuttons {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+#slidingimage1:target ~ .imagecontainer {
+  left: 0px;
+}
+#slidingimage2:target ~ .imagecontainer {
+  left: -800px;
+}
+#slidingimage3:target ~ .imagecontainer {
+  left: -1600px;
+}
+#slidingimage4:target ~ .imagecontainer {
+  left: -2400px;
+}
+#slidingimage5:target ~ .imagecontainer {
+  left: -3200px;
+}
+#slidingimage6:target ~ .imagecontainer {
+  left: -4000px;
+}
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+.img-fluid {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
